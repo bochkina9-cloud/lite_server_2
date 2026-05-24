@@ -1,0 +1,72 @@
+[
+  {
+    "timestamp": "2026-05-22 20:36",
+    "summary": "Запросы: [Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nсохрани сессию в память. 2 итераций",
+    "files_changed": [],
+    "decisions": [],
+    "errors_fixed": [],
+    "user_requests": [
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nсохрани сессию в память",
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nсохрани сессию в память",
+      "[SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+      "[SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nсохрани сессию в память"
+    ]
+  },
+  {
+    "timestamp": "2026-05-22 20:36",
+    "summary": "Запросы: [Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nсохрани сессию в память",
+    "files_changed": [],
+    "decisions": [],
+    "errors_fixed": [],
+    "user_requests": [
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nсохрани сессию в память",
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nсохрани сессию в память",
+      "[SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+      "[SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nсохрани сессию в память"
+    ]
+  },
+  {
+    "timestamp": "2026-05-22 20:45",
+    "summary": "Запросы: [SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+    "files_changed": [],
+    "decisions": [],
+    "errors_fixed": [],
+    "user_requests": [
+      "[SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+      "[SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+      "мы в прошлой сессии делали Lite server.вспомни и скажи-как его преобразовать в ark на github",
+      "мы в прошлой сессии делали Lite server.вспомни и скажи-как его преобразовать в ark на github",
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nШаг 3: Запусти сборку\n1. Перейди"
+    ]
+  },
+  {
+    "timestamp": "2026-05-22 20:53",
+    "summary": "Запросы: [SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+    "files_changed": [],
+    "decisions": [],
+    "errors_fixed": [],
+    "user_requests": [
+      "[SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+      "[SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nпродолжай",
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nпродолжай",
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nТы загрузил файлы на GitHub, но "
+    ]
+  },
+  {
+    "timestamp": "2026-05-22 20:53",
+    "summary": "Запросы: [SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+    "files_changed": [],
+    "decisions": [],
+    "errors_fixed": [],
+    "user_requests": [
+      "[SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+      "[SYSTEM] Пользователь отменил задачу. Прекрати текущую работу.",
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nпродолжай",
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nпродолжай",
+      "[Проект: lite_server]\n[Открыт файл: projects/lite_server/README.md]\nТы загрузил файлы на GitHub, но "
+    ]
+  }
+]
