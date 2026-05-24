@@ -54,13 +54,20 @@ jobs:
     - name: Build APK
       run: |
         export BUILDOZER_WARN_ON_ROOT=1
-        buildozer android debug 2>&1 | tee build_log.txt
+        buildozer android debug 2>&1 | tee build_log.txt || true
+        echo "Build step finished with exit code: $?"
     
-    - name: Show last 300 lines of log
+    - name: Show last 500 lines of log
       if: always()
       run: |
-        echo "=== LAST 300 LINES ==="
-        tail -300 build_log.txt || echo "No log file"
+        echo "=== LAST 500 LINES ==="
+        if [ -f build_log.txt ]; then
+          tail -500 build_log.txt
+        else
+          echo "No log file found - build may have failed before starting"
+          echo "=== Checking for any logs ==="
+          find . -name "*.log" -o -name "*.txt" 2>/dev/null | head -20
+        fi
     
     - name: Check APK exists
       if: always()
