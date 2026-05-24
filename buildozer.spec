@@ -17,7 +17,7 @@ source.include_exts = py,png,jpg,kv,atlas,txt,json
 version = 1.0.0
 
 # Требования
-requirements = kivy==2.3.0
+requirements = kivy==2.3.0,pyjnius
 
 # python-for-android branch
 p4a.branch = master
