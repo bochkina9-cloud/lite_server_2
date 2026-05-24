@@ -55,23 +55,11 @@ android.allow_backup = True
 # Wake lock (не засыпать при работе сервера)
 android.wakelock = True
 
-# Тема Android
-android.theme = @android:style/Theme.DeviceDefault.Light.NoActionBar
-
 # Logcat
-android.logcat_filters = *:S python:D
+# android.logcat_filters = *:S python:D
 
 # Класс приложения
 android.entrypoint = org.kivy.android.PythonActivity
-
-# Gradle зависимости
-android.gradle_dependencies = 
-
-# Intent filters
-android.manifest.intent_filters = 
-
-# Meta data
-android.meta_data = 
 
 [buildozer]
 
