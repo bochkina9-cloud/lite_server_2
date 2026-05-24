@@ -54,8 +54,7 @@ jobs:
     - name: Build APK
       run: |
         export BUILDOZER_WARN_ON_ROOT=1
-        buildozer android debug 2>&1 > build_log.txt
-        echo "Build finished successfully"
+        buildozer android debug 2>&1 | tee build_log.txt
       shell: bash
     
     - name: Build APK (fallback — show errors if above failed)
