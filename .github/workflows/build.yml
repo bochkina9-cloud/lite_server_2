@@ -54,19 +54,33 @@ jobs:
     - name: Build APK
       run: |
         export BUILDOZER_WARN_ON_ROOT=1
-        buildozer android debug 2>&1 | tee build_log.txt || true
-        echo "Build step finished with exit code: $?"
+        buildozer android debug 2>&1 > build_log.txt
+        echo "Build finished successfully"
+      shell: bash
     
-    - name: Show last 500 lines of log
-      if: always()
+    - name: Build APK (fallback — show errors if above failed)
+      if: failure()
       run: |
-        echo "=== LAST 500 LINES ==="
+        echo "=== BUILD FAILED — Showing last 500 lines ==="
         if [ -f build_log.txt ]; then
           tail -500 build_log.txt
         else
-          echo "No log file found - build may have failed before starting"
-          echo "=== Checking for any logs ==="
-          find . -name "*.log" -o -name "*.txt" 2>/dev/null | head -20
+          echo "No build_log.txt found"
+          echo "=== Buildozer global log ==="
+          cat ~/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/python-for-android/build.log 2>/dev/null || echo "No p4a log"
+          echo "=== Any .log files ==="
+          find . -name "*.log" 2>/dev/null | head -20
+        fi
+      shell: bash
+    
+    - name: Show last 200 lines of log (always)
+      if: always()
+      run: |
+        echo "=== LAST 200 LINES OF BUILD LOG ==="
+        if [ -f build_log.txt ]; then
+          tail -200 build_log.txt
+        else
+          echo "No build_log.txt"
         fi
     
     - name: Check APK exists
